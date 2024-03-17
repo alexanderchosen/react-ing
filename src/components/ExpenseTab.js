@@ -1,10 +1,15 @@
+import ExpenseDate from "./ExpenseDate"
+import "./ExpenseTab.css"
+
 function ExpenseTab (props){
 
     return (
-        <div>
-            <div>date = {props.date.toISOString()}</div>
-            <div> {props.title} </div>
-            <div> {props.amount} </div>
+        <div className="expenses">
+            <div className="expenses-title">
+                <ExpenseDate date = {props.date}/>
+                <h2>{props.title}</h2>
+            </div>
+            <div className="expenses-amount"> ${props.amount} </div>
         </div>
     )
 }

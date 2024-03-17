@@ -1,5 +1,6 @@
 import ExpenseTab from "./components/ExpenseTab";
 
+
 function App (){
   const expenses = [
     {
