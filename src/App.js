@@ -1,9 +1,66 @@
+import ExpenseTab from "./components/ExpenseTab";
+
 function App (){
+  const expenses = [
+    {
+      id: "1",
+      title: "Transport Fare",
+      amount: 400,
+      date: new Date(2024, 3, 13)
+    },
+    {
+      id: "2",
+      title: "Daily Feeding",
+      amount: 2500,
+      date: new Date(2024, 3, 13)
+    },
+    {
+      id: "3",
+      title: "Data Subscription",
+      amount: 1000,
+      date: new Date(2024, 3, 13)
+    },
+    {
+      id: "4",
+      title: "Miscellaneous",
+      amount: 3000,
+      date: new Date(2024, 3, 15)
+    },
+    {
+      id: "5",
+      title: "Hostel Fee",
+      amount: 150000,
+      date: new Date(2024, 3, 17)
+    }
+  ]
+
   return (
     <div>
-      <h3>My first React Experience </h3>
-      <p> I am loving this new react experience. Hey! It's all about components, right?</p>
-      <p> I can't wait to see the world-class applications i will build using react. Let's keep react-ing!</p>
+      <ExpenseTab
+        title = {expenses[0].title}
+        amount = {expenses[0].amount}
+        date = {expenses[0].date}
+      ></ExpenseTab>
+      <ExpenseTab
+        title = {expenses[1].title}
+        amount = {expenses[1].amount}
+        date = {expenses[1].date}
+      ></ExpenseTab>
+      <ExpenseTab
+        title = {expenses[2].title}
+        amount = {expenses[2].amount}
+        date = {expenses[2].date}
+      ></ExpenseTab>
+      <ExpenseTab
+        title = {expenses[3].title}
+        amount = {expenses[3].amount}
+        date = {expenses[3].date}
+      ></ExpenseTab>
+      <ExpenseTab
+        title = {expenses[4].title}
+        amount = {expenses[4].amount}
+        date = {expenses[4].date}
+      ></ExpenseTab>
     </div>
   )
 }
