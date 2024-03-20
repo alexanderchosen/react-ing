@@ -1,5 +1,6 @@
 import ExpenseTab from "./components/ExpenseTab";
-
+import './index.css'
+import Card from './components/Card'
 
 function App (){
   const expenses = [
@@ -36,7 +37,7 @@ function App (){
   ]
 
   return (
-    <div>
+    <Card className="expense-tab">
       <ExpenseTab
         title = {expenses[0].title}
         amount = {expenses[0].amount}
@@ -62,7 +63,7 @@ function App (){
         amount = {expenses[4].amount}
         date = {expenses[4].date}
       ></ExpenseTab>
-    </div>
+    </Card>
   )
 }
 

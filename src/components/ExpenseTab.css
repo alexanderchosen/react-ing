@@ -1,9 +1,9 @@
+
 .expenses{
     display: flex;
     background-color:#f7eedd;
     margin: 20px 10px 20px 10px;
     padding: 5px;
-    border-radius: 10px;
     justify-content: space-between;
     font-family:'Times New Roman', Times, serif;
 }
