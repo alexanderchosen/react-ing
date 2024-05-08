@@ -14,7 +14,7 @@ code {
 }
 
 .expense-tab{
-  max-width: 70%;
+  max-width: 50%;
   justify-self: center;
   background-color: rgb(45, 44, 44);
   margin: 50px auto;
